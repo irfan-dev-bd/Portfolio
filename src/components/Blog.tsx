@@ -31,9 +31,9 @@ const cardVariants = {
 };
 
 export default function Blog({ blog }: BlogProps) {
-  if (!blog || blog.length === 0) return null;
-
   const { onMouseMove } = useSpotlight();
+
+  if (!blog || blog.length === 0) return null;
 
   return (
     <section id="blog" className="py-24">
