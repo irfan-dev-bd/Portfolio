@@ -2,16 +2,16 @@
   "personal": {
     "name": "Irfanul Hasan",
     "shortName": "Irfan",
-    "title": "Full Stack Software Developer",
+    "title": "Senior Software Engineer",
     "brandName": "Dev.Irfan",
     "resumePath": "assets/Irfanul_Hasan.pdf"
   },
   "hero": {
     "greeting": "Hi, I'm",
     "typewriterTexts": [
-      "Full Stack Software Developer",
+      "Senior Software Engineer",
       ".NET & React Specialist",
-      "Building Scalable Web Apps"
+      "Serverless AWS & LLM Integrations"
     ],
     "ctaText": "View My Work",
     "techIcons": [
@@ -29,31 +29,49 @@
   "about": {
     "photo": "assets/Ifran_Photo.jpeg",
     "paragraphs": [
-      "I'm a Full Stack Software Developer with {yearsExp}+ years of experience building scalable enterprise web applications. I specialize in .NET (C#) backends and React/TypeScript frontends, with hands-on experience in ERP systems, SaaS platforms, and RESTful API design."
+      "I'm a Senior Software Engineer with {yearsExp}+ years of experience building full-stack web applications and microservices with .NET and React for regulatory-compliance and ERP platforms. At Kaz Software, I built core RegAnalytics modules, shipped LLM-powered streaming content generation, cut document-editor autosave latency by ~80% with Redis caching, and built serverless AWS pipelines for document processing.",
+      "I lead architecture decisions, mentor engineers, and own delivery from planning to production, using AI-assisted tools like Claude Code, Cursor, GitHub Copilot and MCP to ship faster."
     ],
     "highlights": [
       "Full Stack Development (.NET + React)",
-      "RESTful API & Microservices Design",
-      "Enterprise ERP & SaaS Platforms",
-      "Cloud Infrastructure (AWS, Azure)",
-      "Clean Code & Agile Delivery"
+      "Microservices & Clean Architecture",
+      "Serverless & Cloud-Native on AWS",
+      "LLM-Powered Features with Streaming",
+      "Regulatory-Compliance & ERP Platforms",
+      "Technical Leadership & Mentoring"
     ]
   },
   "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Kaz Software",
+      "companyUrl": "https://kaz.com.bd/",
+      "logo": "assets/kaz_software_limited_logo.jfif",
+      "period": "May 2026 – Present",
+      "startDate": "2026-05-01",
+      "endDate": null,
+      "description": "Leading development of the RegAnalytics and RegPlus regulatory-compliance platforms, with a focus on LLM-powered features, Redis caching and serverless AWS pipelines.",
+      "responsibilities": [
+        "Lead development of <strong>RegAnalytics</strong> and <strong>RegPlus</strong>, regulatory-compliance platforms built on <strong>.NET</strong> and <strong>React</strong>.",
+        "Built <strong>LLM-powered</strong> content generation that streams responses to the editor in real time, using the surrounding document as context, cutting first-draft writing time by ~40%.",
+        "Designed a <strong>Redis (ElastiCache)</strong> caching layer for document-editor autosave, reducing latency from ~1.2 s to under 250 ms.",
+        "Built serverless <strong>AWS</strong> pipelines (Lambda, S3, SQS, EventBridge) for document processing and background jobs.",
+        "Lead technical design reviews, mentor 3 engineers through code review and pairing, and own features from planning to production."
+      ]
+    },
     {
       "role": "Software Engineer",
       "company": "Kaz Software",
       "companyUrl": "https://kaz.com.bd/",
       "logo": "assets/kaz_software_limited_logo.jfif",
-      "period": "May 2023 – Present",
+      "period": "May 2023 – April 2026",
       "startDate": "2023-05-01",
-      "endDate": null,
-      "description": "Contributed to Reganalytics — a tax analytics SaaS platform — developing the Regbrief briefing app, Company Data org-chart tool, customized mailing system and used yFiles for interactive visualizations.",
+      "endDate": "2026-04-30",
+      "description": "Built core modules of RegAnalytics, a regulatory-compliance SaaS platform, working across the full stack with .NET Core and React.",
       "responsibilities": [
-        "Built scalable, high-performance web applications using <strong>.NET Core</strong> and <strong>React</strong>.",
-        "Developed key features of the <strong>Reganalytics</strong> tax analytics platform, including <strong>Regbrief</strong> and <strong>Company Data</strong> modules.",
-        "Collaborated with stakeholders, product managers and UX/UI designers to define requirements and enhance the software development process.",
-        "Managed the full lifecycle of software projects — planning, executing, and monitoring from start to finish."
+        "Built the <strong>RegBrief</strong> and <strong>Workspace</strong> modules of <strong>RegAnalytics</strong> from an early stage, letting compliance teams create, organize and share regulatory briefings and documents in one place.",
+        "Contributed to the <strong>TPA</strong> and <strong>WTA</strong> modules.",
+        "Worked with product managers and UX/UI designers to define requirements and turn designs into production features across the full stack."
       ]
     },
     {
@@ -64,12 +82,12 @@
       "period": "January 2021 – April 2023",
       "startDate": "2021-01-01",
       "endDate": "2023-04-30",
-      "description": "Delivered ERP modules for AKIJ, Apon Wellbeing Ltd. and Madina Group. Built Procurement, Inventory, Notification, and Approval Management systems on top of a shared .NET Core platform.",
+      "description": "Built ERP modules for Procurement, Inventory and Approval Management on a shared .NET Core platform.",
       "responsibilities": [
-        "Built and maintained ERP modules for <strong>Procurement, Inventory and Approval Management</strong>.",
-        "Developed <strong>RESTful APIs</strong> using <strong>.NET Core (C#)</strong> for ERP integration.",
-        "Implemented new features, resolved bugs, and optimized application performance.",
-        "Collaborated with cross-functional teams to deliver client-specific solutions."
+        "Built and maintained ERP modules for <strong>Procurement</strong>, <strong>Inventory</strong> and <strong>Approval Management</strong>.",
+        "Developed <strong>RESTful APIs</strong> in <strong>.NET Core (C#)</strong> to integrate ERP modules with other business systems.",
+        "Fixed production bugs and tuned slow SQL queries, improving platform stability and report performance.",
+        "Delivered client-specific ERP customizations with cross-functional teams."
       ]
     }
   ],
@@ -84,36 +102,62 @@
       { "name": "Web API", "icon": "FaCloud", "color": "text-blue-500" },
       { "name": "Entity Framework", "icon": "FaDatabase", "color": "text-blue-500" },
       { "name": "LINQ", "icon": "FaCodeBranch", "color": "text-violet-500" },
+      { "name": "SignalR", "icon": "FaBolt", "color": "text-amber-500" },
       { "name": "Angular", "icon": "FaAngular", "color": "text-red-500" },
       { "name": "Redux", "icon": "FaExchangeAlt", "color": "text-purple-500" },
+      { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "text-sky-500" },
       { "name": "MySQL", "icon": "FaDatabase", "color": "text-emerald-500" },
-      { "name": "Jenkins", "icon": "FaJenkins", "color": "text-surface-700 dark:text-surface-200" },
-      { "name": "Jira", "icon": "FaJira", "color": "text-blue-600" },
-      { "name": "Git", "icon": "FaGitAlt", "color": "text-orange-500" },
+      { "name": "MongoDB", "icon": "SiMongodb", "color": "text-green-600" },
       { "name": "Redis", "icon": "FaMemory", "color": "text-red-500" },
+      { "name": "AWS Serverless", "icon": "FaAws", "color": "text-orange-400" },
+      { "name": "Docker", "icon": "FaDocker", "color": "text-blue-400" },
+      { "name": "Jenkins", "icon": "FaJenkins", "color": "text-surface-700 dark:text-surface-200" },
       { "name": "Microservices", "icon": "FaCubes", "color": "text-cyan-500" },
-      { "name": "AWS S3", "icon": "FaCloudUploadAlt", "color": "text-yellow-500" }
+      { "name": "LLMs / OpenAI API", "icon": "FaRobot", "color": "text-teal-500" },
+      { "name": "xUnit & Moq", "icon": "FaVial", "color": "text-rose-500" },
+      { "name": "Git", "icon": "FaGitAlt", "color": "text-orange-500" },
+      { "name": "Jira", "icon": "FaJira", "color": "text-blue-600" }
     ]
   },
   "projects": [
     {
       "title": "RegAnalytics",
       "company": "Kaz Software",
-      "description": "Enterprise tax analytics SaaS platform delivering regulatory compliance tools including Regbrief (tax-news briefing) and Company Data (org-chart analysis) for global clients.",
+      "description": "Regulatory-compliance software and services, including the RegBrief and Workspace modules, LLM-powered content generation and serverless AWS document processing.",
       "image": "assets/logo_reg.webp",
       "demo": "https://regplus.reganalytics.com",
       "github": null,
-      "technologies": [".NET 6", "C#", "React", "TypeScript", "MSSQL", "AWS S3"],
+      "technologies": ["C#", ".NET", "Web API", "MSSQL", "MongoDB", "TypeScript", "React", "AWS", "Microservices"],
       "featured": false
     },
     {
       "title": "Akij ERP",
       "company": "AKIJ iBOS",
-      "description": "Full-featured Enterprise Resource Planning software covering Procurement, Inventory, Approval workflows, and Notification systems for multiple large Bangladeshi conglomerates.",
+      "description": "Enterprise Resource Planning software covering Procurement, Inventory and Approval Management.",
       "image": "assets/iBOS-new-logo-2048x442.webp",
       "demo": "https://ibos.io/",
       "github": null,
-      "technologies": [".NET 5", "C#", "MSSQL", "Azure"],
+      "technologies": ["C#", ".NET", "Web API", "MSSQL", "Microservices"],
+      "featured": false
+    },
+    {
+      "title": "LexisNews",
+      "company": "Kaz Software",
+      "description": "Tax-compliance news publishing platform. Built the webhook delivery API that pushes new articles to subscriber systems.",
+      "image": null,
+      "demo": null,
+      "github": null,
+      "technologies": ["C#", ".NET", "Web API", "MSSQL", "TypeScript", "React"],
+      "featured": false
+    },
+    {
+      "title": "XML Tool",
+      "company": "Kaz Software",
+      "description": "Structured data conversion service. Built the conversion engine that turns structured data into custom XML exports.",
+      "image": null,
+      "demo": null,
+      "github": null,
+      "technologies": ["C#", ".NET", "Web API"],
       "featured": false
     }
   ],
