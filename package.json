@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://IrfanCSE.github.io/Portfolio",
+  "homepage": "https://irfan-dev-bd.github.io/Portfolio",
   "engines": {
     "node": ">=20.0.0"
   },

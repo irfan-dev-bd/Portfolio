@@ -47,7 +47,7 @@ export default function Footer({ footer }: FooterProps) {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/IrfanCSE"
+              href="https://github.com/irfan-dev-bd"
               target="_blank"
               rel="noopener noreferrer"
               className="text-surface-400 hover:text-surface-700 dark:hover:text-surface-200 transition-colors no-underline"
