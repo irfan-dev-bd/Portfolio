@@ -9,7 +9,7 @@ function resolveAssets(data: SiteData): SiteData {
     personal: { ...data.personal, resumePath: r(data.personal.resumePath) },
     about: { ...data.about, photo: r(data.about.photo) },
     experience: data.experience.map((e) => ({ ...e, logo: r(e.logo) })),
-    projects: data.projects.map((p) => ({ ...p, image: r(p.image) })),
+    projects: data.projects.map((p) => ({ ...p, image: p.image && r(p.image) })),
   };
 }
 

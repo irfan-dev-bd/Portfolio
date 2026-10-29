@@ -64,8 +64,8 @@ export interface Project {
   title: string;
   company: string;
   description: string;
-  image: string;
-  demo: string;
+  image: string | null;
+  demo: string | null;
   github: string | null;
   technologies: string[];
   featured?: boolean;

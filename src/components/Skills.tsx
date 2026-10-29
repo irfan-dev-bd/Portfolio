@@ -12,7 +12,13 @@ import {
   FaMemory,
   FaCubes,
   FaCloudUploadAlt,
+  FaAws,
+  FaDocker,
+  FaBolt,
+  FaVial,
+  FaRobot,
 } from 'react-icons/fa';
+import { SiMongodb, SiTailwindcss } from 'react-icons/si';
 import { useSpotlight } from '../hooks/useSpotlight';
 import type { Skills as SkillsType } from '../types/SiteData';
 
@@ -28,6 +34,13 @@ const iconMap: Record<string, React.ReactNode> = {
   FaMemory: <FaMemory />,
   FaCubes: <FaCubes />,
   FaCloudUploadAlt: <FaCloudUploadAlt />,
+  FaAws: <FaAws />,
+  FaDocker: <FaDocker />,
+  FaBolt: <FaBolt />,
+  FaVial: <FaVial />,
+  FaRobot: <FaRobot />,
+  SiMongodb: <SiMongodb />,
+  SiTailwindcss: <SiTailwindcss />,
 };
 
 /* Horizontal progress bar with scroll-trigger */

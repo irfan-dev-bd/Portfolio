@@ -13,6 +13,17 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45 } },
 };
 
+function ProjectImage({ project, className }: { project: Project; className: string }) {
+  if (project.image) {
+    return <img src={project.image} alt={project.title} loading="lazy" className={className} />;
+  }
+  return (
+    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-500/15 to-accent-400/15">
+      <span className="text-2xl font-bold gradient-text">{project.title}</span>
+    </div>
+  );
+}
+
 export default function Projects({ projects }: ProjectsProps) {
   const allTechs = Array.from(new Set(projects.flatMap((p) => p.technologies)));
   const [activeTech, setActiveTech] = useState<string | null>(null);
@@ -54,10 +65,8 @@ export default function Projects({ projects }: ProjectsProps) {
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Image */}
                 <div className="relative overflow-hidden h-56 md:h-auto bg-surface-100 dark:bg-surface-800">
-                  <img
-                    src={featured.image}
-                    alt={featured.title}
-                    loading="lazy"
+                  <ProjectImage
+                    project={featured}
                     className="w-full h-full object-contain hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/5 dark:to-black/10" />
@@ -102,14 +111,16 @@ export default function Projects({ projects }: ProjectsProps) {
                         <FaGithub size={15} /> View Code
                       </a>
                     )}
-                    <a
-                      href={featured.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors no-underline"
-                    >
-                      Live Demo <FaArrowRight size={12} />
-                    </a>
+                    {featured.demo && (
+                      <a
+                        href={featured.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors no-underline"
+                      >
+                        Live Demo <FaArrowRight size={12} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -164,10 +175,8 @@ export default function Projects({ projects }: ProjectsProps) {
               >
                 {/* Image */}
                 <div className="relative overflow-hidden h-44 bg-surface-100 dark:bg-surface-800">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
+                  <ProjectImage
+                    project={project}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 right-3">
@@ -217,14 +226,16 @@ export default function Projects({ projects }: ProjectsProps) {
                         <FaGithub size={13} /> Code
                       </a>
                     )}
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 transition-colors no-underline"
-                    >
-                      <FaExternalLinkAlt size={11} /> Live Demo
-                    </a>
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 transition-colors no-underline"
+                      >
+                        <FaExternalLinkAlt size={11} /> Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
